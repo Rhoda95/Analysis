@@ -7,6 +7,33 @@
 ### Project Overview
 This contains what your project is all about and what you aim to achieve
 
+
+```SQL
+[UploaDROP DATABASE IF EXISTS `RHODA`;
+CREATE DATABASE `RHODA`;
+USE `RHODA`;
+
+CREATE TABLE FOOD_PRICE_LIST(
+S_N INT,
+ITEM_NAME VARCHAR (50),
+QUANTITY INT,
+UNIT_PRICE FLOAT (50),
+TOTAL_PRICE FLOAT (50),
+primary key (S_N));
+
+INSERT INTO FOOD_PRICE_LIST(S_N, ITEM_NAME, QUANTITY, UNIT_PRICE, TOTAL_PRICE)
+VALUE
+(1, 'BAG OF RICE', 2, 10,000.00, 20,000.00),
+(2, 'BAG OF BEANS', 2, 70,000.00, 140,000.00),
+(3, 'BIG TIN MILK', 2, 12,000.00, 24,000.00),
+(4, 'BIG TIN MILO', 2, 11,000.00, 22,000.00),
+(5, 'TIN TOMATOES', 1, 24,000.00, 24,000.00);
+
+SELECT FROM RHODA.FOOD_PRICE_LIST;
+
+ding FOOD PRICELIST.sql…]()
+```
+
 ### Data Source
 Market data: The secondary source used for this project is the "market_data.csv" file, contains complete information about each sale made by the organization.
 
